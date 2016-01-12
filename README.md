@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/basestylo/translate_me.png?label=ready&title=Ready)](https://waffle.io/basestylo/translate_me)
 [![Gem Version](https://badge.fury.io/rb/translate_me.svg)](https://badge.fury.io/rb/translate_me)
 # TranslateMe
 
