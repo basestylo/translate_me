@@ -13,14 +13,15 @@ module TranslateMe
       html = Nokogiri::HTML(JSON.parse(google_response.body).last.last)
       response = {
         word: html.css("span")[3].children.text,
-        synonyms:  html.css(".tw-bilingual-translation").map{|e| e.text}
-      }    
+        synonyms:  html.css(".tw-bilingual-translation").map{|e| e.text},
+        source_language: html.css("span")[5].text
+      }
     rescue JSON::ParserError => e
       puts e.message
       puts e.backtrace
       puts "URL: " + url
       puts "Body: " + body
-    end	
+    end
     return response || nil
   end
 
