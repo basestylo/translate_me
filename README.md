@@ -25,7 +25,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+gem install 'translate_me'
+```
+__or__
+
+```
+#Add this line in your gemfile
+gem 'translate_me', '~> 0.1.0'
+```
+after this step
+
+```ruby
+TranslateMe.translate("word", "language")
+#also you can define source language
+TranslateMe.translate("word", "target language", "source language")
+
+#An example
+TranslateMe.translate("¡Hola!", "en", "es")
+
+```
 
 ## Development
 
