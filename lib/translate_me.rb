@@ -3,6 +3,7 @@ require 'typhoeus'
 require 'nokogiri'
 require 'uri'
 require 'cgi'
+require 'json'
 
 module TranslateMe
   def self.translate word, to, from=""
